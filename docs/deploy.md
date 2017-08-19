@@ -4,4 +4,8 @@ If you would like to run your own instance of this plugin, see the [docs for dep
 
 This plugin requires these **Permissions & events** for the GitHub App:
 
-> **TODO**: List permissions required for deployment here. See [probot/stale](https://github.com/probot/stale/blob/master/docs/deploy.md) for an example.
+> List permissions required for deployment here.
+
+* **Read** access to code
+* **Read** access to metadata
+* **Read** and **Write** access to issues
