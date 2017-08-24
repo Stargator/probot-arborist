@@ -45,12 +45,23 @@ module.exports = function (robot) {
     if (!isBranchValid) {
       if (botCreatedIssues.length === 0) {
         var newIssue = context.repo(badBranchNameIssueTemplate);
-        newIssue.body = newIssue.body + "* " + branchName;
+        newIssue.body = newIssue.body + "* " + branchName + "\n";
         newIssue.repo = payload.repository.name;
 
+        if (botCreatedIssues.length === 1) {
+          botCreatedIssues[ 0 ].contents = newIssue;
+        } else {
+          // Do something
+        }
         context.github.issues.create(newIssue);
       } else {
-        // Find issue for branch names that don't meet policy
+        if (botCreatedIssues.length === 1) {
+          var issueContent = botCreatedIssues[0].contents;
+          issueContent.body = issueContent.body + "* " + branchName + "\n";
+          context.github.issues.edit();
+        } else {
+          // Do something
+        }
       }
     }
   }
