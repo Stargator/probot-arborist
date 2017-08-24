@@ -1,5 +1,7 @@
 # Probot: Arborist
 
+*This project is **still** in development*
+
 > A GitHub App built with [probot](https://github.com/probot/probot) that validates new branches meet criteria and reports on branches that can be cut down.
 
 ## Setup
@@ -38,3 +40,7 @@ exemptLabels:
 ```
 
 See [docs/deploy.md](docs/deploy.md) if you would like to run your own instance of this plugin.
+
+## Contributing
+
+If you would like to contribute, please see the [task list](https://github.com/Stargator/probot-arborist/issues/1) and leave a comment if you want to take on one of the tasks.
