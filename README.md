@@ -1,5 +1,7 @@
 # Probot: Arborist
 
+[![Join the chat at https://gitter.im/probot-arborist/Lobby](https://badges.gitter.im/probot-arborist/Lobby.svg)](https://gitter.im/probot-arborist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 *This project is **still** in development*
 
 > A GitHub App built with [probot](https://github.com/probot/probot) that validates new branches meet criteria and reports on branches that can be cut down.
