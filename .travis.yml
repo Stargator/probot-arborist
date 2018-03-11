@@ -18,8 +18,7 @@ branches:
   - develop
 
 before_install:
- - npm install -g npm@">=5.0.0"
- - npm --version
+ - yarn --version
 
 notifications:
   disabled: true
