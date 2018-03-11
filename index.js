@@ -3,28 +3,35 @@
 //TODO: This works as is. Need to add configuration file
 module.exports = function (robot) {
 
-  var branchNameIssueTemplate = {
+  const ISSUE_TYPES = {
+    badBranchName: "badBranchName",
+    branchForClosedPullRequest: "branchForClosedPullRequest",
+    branchForMergedPullRequest: "branchForMergedPullRequest"
+  };
+
+  var badBranchNameIssueTemplate = {
     "title": "Recently created branch names don't conform to policy",
-    "body": "The following branches were found to not met branch name policy:\n",
-    "owner": "probot", // TODO: Need to pull from configuration file
-    "repo": ""
+    "body": "The following branches were found to not met branch name policy:\n"
   };
 
   var botCreatedIssues = [];
 
   robot.on('create', async context => {
-    var payload = context.payload;
+    var createPayload = context.payload;
 
-    if ( payload.ref_type === 'branch' ) {
-      branchCreated(payload, context);
+    if ( createPayload.ref_type === 'branch' ) {
+      branchCreated(createPayload, context);
     }
   })
 
+  /**
+   * Looks at all issues opened/created and looks for those that seem to be created by the bot.
+   */
   robot.on('issues.opened', async context => {
-    var payload = context.payload;
+    var issuesOpenedPayload = context.payload;
 
-    if (payload.issue.title === branchNameIssueTemplate.title) {
-      botCreatedIssues.push(payload.issue);
+    if (issuesOpenedPayload.issue.title === badBranchNameIssueTemplate.title) {
+      botCreatedIssues.push({issue: issuesOpenedPayload.issue, contents: "", type: ISSUE_TYPES.badBranchName});
     }
   })
 
@@ -37,7 +44,7 @@ module.exports = function (robot) {
 
     if (!isBranchValid) {
       if (botCreatedIssues.length === 0) {
-        var newIssue = branchNameIssueTemplate;
+        var newIssue = context.repo(badBranchNameIssueTemplate);
         newIssue.body = newIssue.body + "* " + branchName;
         newIssue.repo = payload.repository.name;
 
