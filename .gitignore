@@ -1,4 +1,6 @@
-node_modules
+node_modules/
+.env
 *.log
 *.pem
-.env
+*.txt
+package-lock.json
