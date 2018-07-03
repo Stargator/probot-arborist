@@ -8,7 +8,7 @@
 
 ## Setup
 
-```
+```sh
 # Install dependencies
 yarn install
 
