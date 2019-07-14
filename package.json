@@ -1,28 +1,20 @@
 {
   "name": "probot-arborist",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A GitHub Integration built with probot that validates new branches meet criteria and reports on branches that can be cut down.",
   "author": "John McMahon",
   "license": "ISC",
   "repository": "https://github.com/mcmahonjohn/probot-arborist.git",
   "scripts": {
-    "start": "probot run ./index.js",
-    "test": "jest"
+    "start": "probot run ./index.js"
   },
   "dependencies": {
-    "probot": "^6.0.0"
-  },
-  "devDependencies": {
-    "jest": "^21.2.1",
-    "smee-client": "^1.0.1"
+    "handlebars": "^4.1.0",
+    "original": "1.0.2",
+    "probot": "^9.0.0"
   },
   "engines": {
-    "node": ">= 7.6.0",
-    "npm": ">= 5.5.0"
-  },
-  "standard": {
-    "env": [
-      "jest"
-    ]
+    "node": ">= 10.13.0",
+    "npm": ">= 6.4.0"
   }
 }
