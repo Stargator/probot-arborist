@@ -6,7 +6,8 @@
   "license": "ISC",
   "repository": "https://github.com/mcmahonjohn/probot-arborist.git",
   "scripts": {
-    "start": "probot run ./index.js"
+    "start": "probot run ./index.js",
+    "test": "echo 'no tests'"
   },
   "dependencies": {
     "handlebars": "^4.1.0",
@@ -14,7 +15,7 @@
     "probot": "^9.0.0"
   },
   "engines": {
-    "node": ">= 10.13.0",
-    "npm": ">= 6.4.0"
-  }
+    "node": ">= 8.0.0",
+    "npm": ">= 6.13.0",
+    "yarn":  ">= 1.21.1"}
 }
