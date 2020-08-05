@@ -1,6 +1,6 @@
 {
   "name": "probot-arborist",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A GitHub Integration built with probot that validates new branches meet criteria and reports on branches that can be cut down.",
   "author": "John McMahon",
   "license": "ISC",
