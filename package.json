@@ -10,7 +10,7 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "handlebars": "^4.3.0",
+    "handlebars": "^4.7.7",
     "original": "1.0.2",
     "probot": "^9.0.0"
   },
