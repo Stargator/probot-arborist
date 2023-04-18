@@ -859,19 +859,7 @@ graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-handlebars@4.7.7, handlebars@^4.3.0:
-  version "4.7.7"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
-  integrity sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==
-  dependencies:
-    minimist "^1.2.5"
-    neo-async "^2.6.0"
-    source-map "^0.6.1"
-    wordwrap "^1.0.0"
-  optionalDependencies:
-    uglify-js "^3.1.4"
-
-handlebars@^4.7.7:
+handlebars@4.7.7, handlebars@^4.7.7:
   version "4.7.7"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   integrity sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==
@@ -1327,9 +1315,9 @@ mkdirp@~0.5.1:
     minimist "^1.2.6"
 
 moment@^2.19.3:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.0.0:
   version "2.0.0"
